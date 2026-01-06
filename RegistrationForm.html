@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            background-image: url("https://www.sinnaps.com/wp-content/uploads/2018/07/collaborative-work-enviroment-min.jpg");
+            position: sticky;
+
+        }
+        .form-container{
+            position: absolute;
+            left: 25%;
+            width: 600px;
+            display: flexbox;
+
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .gender-group{
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            align-items:flex-start;
+            gap: 20px;
+        }
+    
+        input, textarea, select{
+            width: 60%;
+            padding: 8px;
+            margin: 10px 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(0, 104, 104);
+        }
+        h3{
+            text-align: center;
+            text-transform: capitalize;
+            color: blueviolet;
+        }
+        h4{
+            text-decoration: underline;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="form-container">
+        <h3><b>Registration Form</b></h3>
+        <form>
+            
+            <h4>Personal Details</h4>
+            <b>Name:</b><input type="text" name="name" placeholder="Enter your name" required><br>
+            <b>Gender:</b><div class="gender-group"><input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female</div><br>
+            <b>Contact Number:</b><input type="number" name="Contact" placeholder="Enter your contact no." required><br>
+            <b>Email:</b><input type="email" name="email" placeholder="Enter your email" required><br>
+            <b>DoB:</b><input type="date" name="dob" required><br>
+            <b>Address:</b><textarea rows="2" placeholder="Enter your complete address" required></textarea>
+
+            <h4>Course Details</h4>
+            <b>Select Course:</b><select name="course">
+                <option>Java Full Stack Development</option>
+                <option>Web Development</option>
+                <option>Data Science with Python</option>
+                <option>Python: Baisc to Advance</option>
+                <option>Cybersecurity</option>
+                <option>Advance Cloud Computing</option>
+
+            </select>
+            <br><br>
+            <button type="submit">Submit Form</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
