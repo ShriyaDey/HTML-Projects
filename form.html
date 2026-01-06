@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header>Registration Form</header>
+    <title>Contact form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+
+        }
+        .form-container{
+            width: 600px;
+            margin:70px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin:8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            background-color: aquamarine;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <form>
+            Name:<input type="text" placeholder="Ajay" required>
+            Email:<input type="email" placeholder="ajay@google.com" required>
+        
+            Date of Birth:<input type="date" name="dob">
+            <textarea rows="4" placeholder="Software Developer"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+</body>
+</html>
