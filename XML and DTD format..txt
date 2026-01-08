@@ -1,0 +1,19 @@
+XML and DTD format.
+
+<?xml version="1.0" encoding="UTF8"?>
+<!DOCTYPE studentdetails [
+<!ELEMENT studentdetails (name,course,year,activity,contact)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT activity (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+]>
+
+<studentdetails>
+	<name>AJAY</name>
+    <course>Python</course>
+    <year>2025</year>
+    <activity>presentation</activity>
+    <contact>1902319023</contact>
+</studentdetails>
