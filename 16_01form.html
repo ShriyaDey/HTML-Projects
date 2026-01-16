@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form id="myform">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="user-details">
+        <h3>user details</h3>
+        <h2 id="name" style="color: blue;"></h2>
+
+    </div>
+    <div>
+        <select id="mycolors" >
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+    </div>
+    <div id="box"></div>
+
+    <div>
+        <label for="country">Select a county:</label>
+        <select id="country" onchange="handleChange()">
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+
+        </select>
+        <p id="text"></p>
+
+    </div>
+<script src="event.js"></script>
+</body>
+</html>
